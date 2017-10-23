@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--CameraVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CameraVC" customModule="LikeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-dq-s4i" customClass="PreviewView" customModule="LikeChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5P-g7-F91">
+                                <rect key="frame" x="152.5" y="589" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="NXC-sN-yU5"/>
+                                    <constraint firstAttribute="height" constant="70" id="xXC-gq-VX4"/>
+                                </constraints>
+                                <state key="normal" image="createsnap_btn"/>
+                                <connections>
+                                    <action selector="recordBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ou-Dt-uNC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDb-0z-RcV">
+                                <rect key="frame" x="307" y="28" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HiS-x5-NPH"/>
+                                    <constraint firstAttribute="width" constant="60" id="yBl-Pd-8fZ"/>
+                                </constraints>
+                                <state key="normal" image="camera_icon_snap"/>
+                                <connections>
+                                    <action selector="changeCameraBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k7B-2z-shW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HDb-0z-RcV" secondAttribute="trailing" constant="8" id="1zk-kr-LRX"/>
+                            <constraint firstItem="fbk-dq-s4i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9yb-bO-BIa"/>
+                            <constraint firstItem="HDb-0z-RcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="P1K-aQ-mea"/>
+                            <constraint firstItem="U5P-g7-F91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R26-Uu-bbx"/>
+                            <constraint firstItem="fbk-dq-s4i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wnz-eO-eDc"/>
+                            <constraint firstItem="fbk-dq-s4i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YMM-9W-cEs"/>
+                            <constraint firstItem="fbk-dq-s4i" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cGO-qj-Gxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U5P-g7-F91" secondAttribute="bottom" constant="8" id="xbP-2N-CAH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="fbk-dq-s4i" id="Kqn-n3-Vyg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera_icon_snap" width="29" height="24"/>
+        <image name="createsnap_btn" width="30" height="30"/>
+    </resources>
 </document>
