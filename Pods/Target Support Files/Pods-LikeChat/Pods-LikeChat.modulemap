@@ -1,0 +1,6 @@
+framework module Pods_LikeChat {
+  umbrella header "Pods-LikeChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

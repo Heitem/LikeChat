@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763197A11FA6838500B3BD3B /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197A01FA6838500B3BD3B /* RoundTextField.swift */; };
+		763197A31FA68B3500B3BD3B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197A21FA68B3500B3BD3B /* RoundButton.swift */; };
+		763197A51FA7C69500B3BD3B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197A41FA7C69500B3BD3B /* LoginVC.swift */; };
+		763197A81FA7CB5100B3BD3B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197A71FA7CB5100B3BD3B /* AuthService.swift */; };
+		763197AA1FA9141800B3BD3B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197A91FA9141800B3BD3B /* DataService.swift */; };
+		763197AC1FAB8F8A00B3BD3B /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763197AB1FAB8F8A00B3BD3B /* UsersVC.swift */; };
 		76BEBF071F9E2DD400BEBD57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF061F9E2DD400BEBD57 /* AppDelegate.swift */; };
 		76BEBF091F9E2DD400BEBD57 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF081F9E2DD400BEBD57 /* CameraVC.swift */; };
 		76BEBF0C1F9E2DD400BEBD57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BEBF0A1F9E2DD400BEBD57 /* Main.storyboard */; };
@@ -15,9 +21,22 @@
 		76BEBF1A1F9E348100BEBD57 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF181F9E348000BEBD57 /* CameraViewController.swift */; };
 		76BEBF1B1F9E348100BEBD57 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF191F9E348000BEBD57 /* PreviewView.swift */; };
 		76BEBF1F1F9E369B00BEBD57 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF1E1F9E369A00BEBD57 /* PhotoCaptureDelegate.swift */; };
+		76BEBF221F9FB60300BEBD57 /* CameraVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEBF211F9FB60300BEBD57 /* CameraVCDelegate.swift */; };
+		76BEBF241F9FC10300BEBD57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76BEBF231F9FC10300BEBD57 /* GoogleService-Info.plist */; };
+		76CE6BB71FAB9EC8009B4D5F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE6BB61FAB9EC8009B4D5F /* UserCell.swift */; };
+		76CE6BB91FABA222009B4D5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CE6BB81FABA222009B4D5F /* User.swift */; };
+		D8D49D46494EFFD982F055E8 /* Pods_LikeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CF6B513EBC89AD42194197 /* Pods_LikeChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42CF6B513EBC89AD42194197 /* Pods_LikeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LikeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ECD61CE34D3E9A5575BC77 /* Pods-LikeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-LikeChat/Pods-LikeChat.release.xcconfig"; sourceTree = "<group>"; };
+		763197A01FA6838500B3BD3B /* RoundTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		763197A21FA68B3500B3BD3B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		763197A41FA7C69500B3BD3B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		763197A71FA7CB5100B3BD3B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		763197A91FA9141800B3BD3B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		763197AB1FAB8F8A00B3BD3B /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		76BEBF031F9E2DD400BEBD57 /* LikeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76BEBF061F9E2DD400BEBD57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76BEBF081F9E2DD400BEBD57 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -28,6 +47,11 @@
 		76BEBF181F9E348000BEBD57 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		76BEBF191F9E348000BEBD57 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		76BEBF1E1F9E369A00BEBD57 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		76BEBF211F9FB60300BEBD57 /* CameraVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVCDelegate.swift; sourceTree = "<group>"; };
+		76BEBF231F9FC10300BEBD57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		76CE6BB61FAB9EC8009B4D5F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		76CE6BB81FABA222009B4D5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E47A091AC699E770F8B9C6B4 /* Pods-LikeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LikeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LikeChat/Pods-LikeChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8D49D46494EFFD982F055E8 /* Pods_LikeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1473B6F6EF681EC86C659B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E47A091AC699E770F8B9C6B4 /* Pods-LikeChat.debug.xcconfig */,
+				54ECD61CE34D3E9A5575BC77 /* Pods-LikeChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		763197A61FA7CB2400B3BD3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				763197A71FA7CB5100B3BD3B /* AuthService.swift */,
+				763197A91FA9141800B3BD3B /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		76BEBEFA1F9E2DD400BEBD57 = {
 			isa = PBXGroup;
 			children = (
 				76BEBF051F9E2DD400BEBD57 /* LikeChat */,
 				76BEBF041F9E2DD400BEBD57 /* Products */,
+				1473B6F6EF681EC86C659B22 /* Pods */,
+				FC3D85A4989C05A9F9B72639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +105,8 @@
 		76BEBF051F9E2DD400BEBD57 /* LikeChat */ = {
 			isa = PBXGroup;
 			children = (
+				763197A61FA7CB2400B3BD3B /* Services */,
+				76BEBF201F9FB59800BEBD57 /* Protocols */,
 				76BEBF1D1F9E348C00BEBD57 /* Controller */,
 				76BEBF1C1F9E348500BEBD57 /* View */,
 				76BEBF061F9E2DD400BEBD57 /* AppDelegate.swift */,
@@ -68,6 +115,8 @@
 				76BEBF0D1F9E2DD400BEBD57 /* Assets.xcassets */,
 				76BEBF0F1F9E2DD400BEBD57 /* LaunchScreen.storyboard */,
 				76BEBF121F9E2DD400BEBD57 /* Info.plist */,
+				76BEBF231F9FC10300BEBD57 /* GoogleService-Info.plist */,
+				76CE6BB81FABA222009B4D5F /* User.swift */,
 			);
 			path = LikeChat;
 			sourceTree = "<group>";
@@ -76,6 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				76BEBF191F9E348000BEBD57 /* PreviewView.swift */,
+				763197A01FA6838500B3BD3B /* RoundTextField.swift */,
+				763197A21FA68B3500B3BD3B /* RoundButton.swift */,
+				76CE6BB61FAB9EC8009B4D5F /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,8 +137,26 @@
 			children = (
 				76BEBF181F9E348000BEBD57 /* CameraViewController.swift */,
 				76BEBF081F9E2DD400BEBD57 /* CameraVC.swift */,
+				763197A41FA7C69500B3BD3B /* LoginVC.swift */,
+				763197AB1FAB8F8A00B3BD3B /* UsersVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		76BEBF201F9FB59800BEBD57 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				76BEBF211F9FB60300BEBD57 /* CameraVCDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC3D85A4989C05A9F9B72639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42CF6B513EBC89AD42194197 /* Pods_LikeChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76BEBF151F9E2DD400BEBD57 /* Build configuration list for PBXNativeTarget "LikeChat" */;
 			buildPhases = (
+				7F76DE3837CFB9349DD0F6A3 /* [CP] Check Pods Manifest.lock */,
 				76BEBEFF1F9E2DD400BEBD57 /* Sources */,
 				76BEBF001F9E2DD400BEBD57 /* Frameworks */,
 				76BEBF011F9E2DD400BEBD57 /* Resources */,
+				35DE8316A969F57C6AF43C38 /* [CP] Embed Pods Frameworks */,
+				A32CA0BE3C5A92E79BB5AF60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BEBF111F9E2DD400BEBD57 /* LaunchScreen.storyboard in Resources */,
+				76BEBF241F9FC10300BEBD57 /* GoogleService-Info.plist in Resources */,
 				76BEBF0E1F9E2DD400BEBD57 /* Assets.xcassets in Resources */,
 				76BEBF0C1F9E2DD400BEBD57 /* Main.storyboard in Resources */,
 			);
@@ -156,16 +230,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35DE8316A969F57C6AF43C38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LikeChat/Pods-LikeChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeChat/Pods-LikeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F76DE3837CFB9349DD0F6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LikeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A32CA0BE3C5A92E79BB5AF60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LikeChat/Pods-LikeChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76BEBEFF1F9E2DD400BEBD57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763197A31FA68B3500B3BD3B /* RoundButton.swift in Sources */,
+				76CE6BB71FAB9EC8009B4D5F /* UserCell.swift in Sources */,
 				76BEBF091F9E2DD400BEBD57 /* CameraVC.swift in Sources */,
 				76BEBF1B1F9E348100BEBD57 /* PreviewView.swift in Sources */,
 				76BEBF071F9E2DD400BEBD57 /* AppDelegate.swift in Sources */,
+				763197A11FA6838500B3BD3B /* RoundTextField.swift in Sources */,
+				76CE6BB91FABA222009B4D5F /* User.swift in Sources */,
+				763197AA1FA9141800B3BD3B /* DataService.swift in Sources */,
+				763197A51FA7C69500B3BD3B /* LoginVC.swift in Sources */,
 				76BEBF1F1F9E369B00BEBD57 /* PhotoCaptureDelegate.swift in Sources */,
+				763197A81FA7CB5100B3BD3B /* AuthService.swift in Sources */,
+				76BEBF221F9FB60300BEBD57 /* CameraVCDelegate.swift in Sources */,
 				76BEBF1A1F9E348100BEBD57 /* CameraViewController.swift in Sources */,
+				763197AC1FAB8F8A00B3BD3B /* UsersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,9 +443,11 @@
 		};
 		76BEBF161F9E2DD400BEBD57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47A091AC699E770F8B9C6B4 /* Pods-LikeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MSD4YZAXJC;
 				INFOPLIST_FILE = LikeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heitemol.LikeChat;
@@ -314,9 +459,11 @@
 		};
 		76BEBF171F9E2DD400BEBD57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ECD61CE34D3E9A5575BC77 /* Pods-LikeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MSD4YZAXJC;
 				INFOPLIST_FILE = LikeChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heitemol.LikeChat;
